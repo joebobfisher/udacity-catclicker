@@ -22,6 +22,18 @@
         <h2 class="name" id="kitty-name"></h2>
         <img id="kitty-img" src="">
         <div class="counter" id="kitty-counter"></div>
+        <div id="admin-button-area">
+          <button type="button" id="admin-button" onclick=viewAdmin.showAdmin()>Admin</button>
+        </div>
+        <div id="admin-area">
+          <form>
+            <p>Name: <input type="text" id="name-field" value=""></p>
+            <p>Img URL: <input type="text" id="img-url-field" value=""></p>
+            <p>Counter: <input type="text" id="counter-field" value=""></p>
+            <p><input type="submit" id="ok-button" value="OK" onclick=viewAdmin.ok()>
+               <input type="submit" id="cancel-button" value="Cancel" onclick=viewAdmin.cancel()></p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
